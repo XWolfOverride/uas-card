@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>EASA</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script lang="javascript" src="cardfiller.js"></script>
+  <script lang="javascript" src="qrcode.min.js"></script>
+</head>
+
+</body>
+<div id="card">
+  <div id="cidbox">CID:<span id="cid"></span></div>
+  <img id="easa" src="easa.png">
+  <img id="aesa" src="aesa.png">
+  <img id="eu" src="europe.jpg">
+  <div id="eu-text">ESP</div>
+  <div id="cert">
+    <img id="cert-img" src="Certficado.png">
+    <span id="cert-text">
+      Registro de operador UAS<br />
+      UAS operator registration
+    </span>
+  </div>
+  <div id="qr"></div>
+  <div id="name-id">
+    <div id="adorno"></div>
+    <div class="label">Nombre (First name)</div>
+    <div id="name"></div>
+    <div class="label">Número de registro (Registration number)</div>
+    <div id="id"></div>
+  </div>
+  <div id="lname-date">
+    <div class="label">Apellidos (Last name)</div>
+    <div id="lname"></div>
+    <div class="label">Fecha de caducidad (Expiration date)</div>
+    <div id="date"></div>
+  </div>
+</div>
+<div id="matricula" title="Matricula para poner en el dron">
+
+</div>
+<div id="editor" class="no-print">
+  <div id="editor-body">
+    <div class="l">CID:</div>
+    <div><input id="e-cid"></div>
+    <div class="l">Nombre (First name):</div>
+    <div><input id="e-name"></div>
+    <div class="l">Apellidos (Last name):</div>
+    <div><input id="e-lname"></div>
+    <div class="l">Número de registro (Registration number):</div>
+    <div><input id="e-id"></div>
+    <div class="l">Fecha de caducidad (Expiration date):</div>
+    <div><input id="e-date"></div>
+    <div class="l"><input type="hidden" id="e-flags"><div id="flags" style="display:none"></div></div>
+    <div title="Tamaño de tarjeta para imprimir en máquinas de laminar/plastificar." class="flg"><input type="checkbox" id="f-small" value="P">Para plastificar.</div>
+    <!--div title="Ha realizado el curso A1/A3" class="flg"><input type="checkbox" id="f-a1a3" value="1">A1/A3</div-->
+    <div class="b">
+      <button id="print">Print</button>
+    </div>
+  </div>
+</div>
+
+</html>

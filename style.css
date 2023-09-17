@@ -1,0 +1,232 @@
+html {
+    font-family: "arial";
+}
+
+#card {
+    background: white;
+    border: 0.1mm solid silver;
+    width: 85.5mm;
+    height: 54mm;
+    position: fixed;
+    font-size: 0.7rem;
+    top: 5mm;
+    left: 5mm;
+    border-radius: 3mm;
+}
+#card.small{
+    outline: 1px solid silver;
+    outline-offset: -7px;
+    border-color:transparent;
+}
+
+#cidbox {
+    margin-top: 7mm;
+    font-size: 0.4rem;
+    text-align: center;
+    color: gray;
+    margin-left: -6mm;
+}
+
+#cid {
+    color: black;
+}
+
+#easa {
+    position: absolute;
+    left: 5mm;
+    top: 5mm;
+    width: 15mm;
+}
+
+#aesa {
+    position: absolute;
+    right: 5mm;
+    top: 5mm;
+    width: 20mm;
+}
+
+#eu {
+    position: absolute;
+    left: 5mm;
+    top: 20mm;
+    width: 10mm;
+}
+
+#eu-text {
+    position: absolute;
+    left: 5mm;
+    top: 22.2mm;
+    width: 10mm;
+    font-size: 0.45rem;
+    color: white;
+    content: "ESP";
+    text-align: center;
+}
+
+#cert {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 10mm;
+    text-align: center;
+    margin-left: -8mm;
+}
+
+#cert-img {
+    width: 22mm;
+}
+
+#cert-text {
+    display: block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: -1mm;
+    font-size: 0.52rem;
+}
+
+#adorno {
+    position: absolute;
+    left: -5mm;
+    top: 0;
+    width: 3mm;
+    height: 1.5mm;
+    background-color: #28287a;
+}
+
+.label {
+    font-size: 0.45rem;
+    color: gray;
+}
+
+#qr {
+    position: absolute;
+    top: 14mm;
+    right: 5mm;
+    width: 21mm;
+    height: 21mm;
+}
+
+#qr * {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+#name-id {
+    position: absolute;
+    left: 5mm;
+    bottom: 5mm;
+}
+
+#lname-date {
+    position: absolute;
+    right: 5mm;
+    bottom: 5mm;
+}
+
+#editor {
+    position: fixed;
+    top: 0;
+    left: 96mm;
+    right: 0;
+    bottom: 0;
+    background: #28287a;
+    padding: 1rem;
+    overflow: auto;
+}
+
+#editor * {
+    box-sizing: border-box;
+}
+
+#editor-body {
+    max-width: 20rem;
+    margin: 0 auto;
+}
+
+#editor .l {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+    color: white;
+}
+
+#editor input {
+    width: 100%;
+    color: white;
+    background-color: #434391;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    height: 2rem;
+    padding: 0 1rem;
+}
+
+#editor .b {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+#editor button {
+    width: 6rem;
+    height: 2rem;
+    background: #ffd900;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 1rem;
+    outline: none;
+}
+
+#editor button:active {
+    width: 6rem;
+    height: 2rem;
+    background: #ffd900c5;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 1rem;
+    outline: none;
+}
+
+#matricula {
+    position: fixed;
+    font-size: 1rem;
+    top: 64mm;
+    left: 5mm;
+    outline: 0.1mm solid silver;
+    line-height: 7mm;
+    padding: 0 5mm;
+}
+
+#matricula::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3mm;
+    bottom: 0;
+    background-color: #28287a;
+}
+
+#editor .flg{
+    color:white;
+}
+#editor .flg input{
+    width:auto;
+    height: auto;
+}
+
+@media print {
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 160mm) {
+    #editor {
+        top: 64mm;
+        left: 0;
+    }
+    #matricula {
+        display: none;
+    }
+}
